@@ -6,3 +6,4 @@ terraform.tfstate
 .terraform/plugins/windows_amd64/lock.json
 terraform.tfstate.backup
 sambit.pub
+.terraform.tfstate.lock.info
