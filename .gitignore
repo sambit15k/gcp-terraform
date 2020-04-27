@@ -1,0 +1,8 @@
+sambit.pem
+google-93274b98dc61.json
+.terraform/plugins/windows_amd64/terraform-provider-google_v3.18.0_x5.exe
+.terraform/plugins/windows_amd64/terraform-provider-random_v2.2.1_x4.exe
+terraform.tfstate
+.terraform/plugins/windows_amd64/lock.json
+terraform.tfstate.backup
+sambit.pub
