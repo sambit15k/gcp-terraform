@@ -1,8 +1,3 @@
-provider "google" {
-  project = var.project
-  region  = var.region
-  zone    = var.zone
-}
 
 data "google_compute_image" "ubuntu" {
   family  = "ubuntu-minimal-lts"
@@ -84,6 +79,6 @@ resource "google_compute_firewall" "allow_http_https_ssh" {
     ports    = ["22", "80", "443"]
   }
 
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = var.allowed_ssh_ranges
   target_tags   = ["http-server", "https-server"]
 }

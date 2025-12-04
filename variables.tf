@@ -33,3 +33,9 @@ variable "preemptible" {
   type        = bool
   default     = false
 }
+
+variable "allowed_ssh_ranges" {
+  description = "List of IP ranges allowed to SSH into the instance"
+  type        = list(string)
+  default     = ["0.0.0.0/0"] # Change this to your IP range for security
+}
