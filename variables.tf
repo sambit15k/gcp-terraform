@@ -20,7 +20,7 @@ variable "ssh_user" {
 
 variable "ssh_key_path" {
   description = "Path to your public SSH key (e.g., ~/.ssh/id_rsa.pub)"
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "ssh_key.txt"
 }
 
 variable "domain_name" {

@@ -50,7 +50,7 @@ resource "google_compute_instance" "prod_vm" {
   EOT
 
   metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.ssh_key_path)}"
+    ssh-keys = "${var.ssh_user}:${file(pathexpand(var.ssh_key_path))}"
   }
 
   scheduling {
